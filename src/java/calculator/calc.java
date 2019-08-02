@@ -33,8 +33,25 @@ public class calc extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             int n1=Integer.parseInt(request.getParameter("n1"));
-            int n2=Integer.parseInt(request.getParameter("n1"));
-            out.println(n1+n2);
+            int n2=Integer.parseInt(request.getParameter("n2"));
+            String operator=request.getParameter("operator");
+            
+       
+        switch(operator)
+        {
+            case("s"): /*IF PLUS*/
+               out.println(n1+n2);
+                break;
+            case("-"): /*IF MINUS*/
+                out.println(n1-n2);
+                break;
+            case("*"): /*IF MULTIPLICATION*/
+                out.println(n1*n2);
+                break;
+            case("/"): /*IF DIVISION*/
+               out.println(n1/n2);
+                break;
+        }
             
         }
     }

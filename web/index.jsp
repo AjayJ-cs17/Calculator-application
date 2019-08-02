@@ -14,11 +14,24 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <input type="text" name="n1" id="number1">
-        <input type="text" name="n2" id="number2">
-            <input type="button" onclick="add()">
-            
-            <div id="result"></div>
+    <center><h2>Simple Calculator</h2>
+    
+    Enter number:<input type="text" name="n1" id="number1"><br><br>
+        Enter number:<input type="text" name="n2" id="number2"><br>
+      <br>  operation
+        <select name="operator" id="op">
+            <option value="s"> + </option>
+            <option value="-"> - </option>
+            <option value="*"> * </option>
+            <option value="/"> / </option>
+        </select><br><br>
+        <button type="button" name="add" id="ad" onclick="add()">Calculate</button><br>
+            <br>
+           <h2>Result</h2>
+      
+            <h3><div id="result"></div></h3>
+
+</center>
       
     </body>
 </html>
