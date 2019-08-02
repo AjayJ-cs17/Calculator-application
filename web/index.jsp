@@ -14,11 +14,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="calc" method="get">
-            <input type="text" name="n1">
-            <input type="text" name="n2">
-            <input type="submit">
+        <input type="text" name="n1" id="number1">
+        <input type="text" name="n2" id="number2">
+            <input type="button" onclick="add()">
             
-        </form>
+            <div id="result"></div>
+      
     </body>
 </html>
